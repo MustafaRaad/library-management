@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/books.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <ul>
+          <li>
+            <div class="nav-avatar"></div>
+            <p class="avatar-user">UserName</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="books.html" class="active"
+              ><i class="fas fa-book"></i> Books</a
+            >
+          </li>
+          <li>
+            <a href="dissertation.html"
+              ><i class="fas fa-book-open"></i>Dissertation</a
+            >
+          </li>
+          <li>
+            <a href="articles.html"><i class="fas fa-newspaper"></i>Articles</a>
+          </li>
+          <li>
+            <a href="about.html"><i class="fas fa-info-circle"></i>About</a>
+          </li>
+          <li>
+            <a href="contact.html"
+              ><i class="fas fa-address-card"></i>Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <section>
+        <div class="topnav">
+          <a href="dashboard.html"  class="topnav-logo"></a>
+          <div class="nav-items">
+            <form action="" class="nav-item">
+              <select name="" id="">
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </select>
+              <a href="index.html">
+                <button class="btn accent-color">Logout</button>
+              </a>
+            </form>
+          </div>
+        </div>
+
+        <!-- --------------------------- -->
+        <div class="g-container fade">
+          <h2>My Books</h2>
+
+          <input
+            type="text"
+            id="myInput"
+            onkeyup="myFunction()"
+            placeholder="Search for names.."
+            title="Type in a name"
+          />
+
+          <table id="myTable">
+            <tr>
+              <!--When a header is clicked, run the sortTable function, with a parameter, 0 for sorting by names, 1 for sorting by country:-->
+              <th onclick="sortTable(0)">Name</th>
+              <th onclick="sortTable(1)">Country</th>
+              <th onclick="sortTable(2)">Country</th>
+              <th onclick="sortTable(3)">Country</th>
+              <th>Action</th>
+            </tr>
+            <tr>
+              <td>Berglunds snabbkop</td>
+              <td>Sweden</td>
+              <td>Sweden</td>
+              <td>Sweden</td>
+              <td class="action">
+                <a href="#" class="l">
+                  <i class="fab fa-readme"></i>
+                </a>
+                <a href="#" class="r">
+                  <i class="fas fa-download"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>North/South</td>
+              <td>UK</td>
+              <td>UK</td>
+              <td>UK</td>
+              <td class="action">
+                <a href="" class="l">
+                  <i class="fab fa-readme"></i>
+                </a>
+                <a href="" class="r">
+                  <i class="fas fa-download"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Germany</td>
+              <td>Germany</td>
+              <td>Germany</td>
+              <td class="action">
+                <a href="" class="l">
+                  <i class="fab fa-readme"></i>
+                </a>
+                <a href="" class="r">
+                  <i class="fas fa-download"></i>
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- --------------------------------- -->
+      </section>
+    </main>
+    <script src="js/tables.js"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="container fade">
+  
+      <div class="login-box">
+        <div class="imgcontainer"></div>
+        <form action="action_page.php" method="post">
+          <label for="reg-name"><b>Name</b></label>
+          <input
+            type="text"
+            placeholder="Enter name"
+            name="reg-name"
+            required
+          />
+          <label for="reg-email"><b>Email</b></label>
+          <input
+            type="text"
+            placeholder="Enter Email"
+            name="reg-email"
+            required
+          />
+          <label for="reg-psw"><b>Password</b></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="reg-psw"
+            required
+          />
+          <label for="reg-birthdate"><b>Birthdate</b></label>
+          <input
+            type="date"
+            placeholder="Enter Birthdate"
+            name="reg-birthdate"
+            required
+          />
+          <button type="submit" class="btn main-color w100">Register</button>
+          <p class="text-center">Or</p>
+        </form>
+        <a href="index.html">
+          <button class="btn accent-color w100">Login</button>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

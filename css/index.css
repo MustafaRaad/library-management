@@ -1,0 +1,53 @@
+body {
+  background-position: top;
+  background-size: cover;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100%;
+}
+.login-box {
+  margin: auto;
+  width: 50%;
+  border-radius: 10px;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  background-image: url("/imgs/avatar.svg");
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  margin: 20px auto;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 25%;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+.navbar {
+  display: flex;
+  margin: 20px auto;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 10px;
+  font-size: 16pt;
+  box-shadow: 0 0 10px 0 grey;
+  justify-content: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .login-box {
+    width: 90%;
+  }
+}

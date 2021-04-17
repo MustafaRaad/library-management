@@ -1,0 +1,351 @@
+* {
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+html,
+body {
+  background-color: #f5f5f5;
+  height: 100%;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+span {
+  margin: 0;
+}
+
+main {
+  display: grid;
+  /* grid-template-areas: "nav section"; */
+  grid-template-columns: 15% auto;
+  grid-template-rows: 100%;
+  grid-gap: 10;
+  align-content: center;
+  height: 100%;
+}
+
+nav {
+  grid-row: 1/6;
+  grid-column: 1/1;
+  background-color: #fff;
+  box-shadow: 0 0 5px #d7d7d7;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  padding: 20px 0;
+}
+nav > ul {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  list-style: none;
+  align-self: center;
+  margin: 0;
+}
+nav > ul > li {
+  margin: 15px 0;
+}
+nav > ul > li > a {
+  text-decoration: none;
+  font-size: 14pt;
+  font-weight: 600;
+  color: #303030;
+}
+nav > ul > li > a:hover {
+  color: #7474bf;
+}
+nav > ul > li > a:active {
+  color: #7474bf;
+}
+.active {
+  color: #7474bf;
+}
+nav > ul > li > a > i {
+  margin-right: 20px;
+}
+.nav-avatar {
+  background-image: url("/imgs/avatar.svg");
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  margin: 5px auto;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
+.avatar-user {
+  text-align: center;
+}
+.topnav {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #e7e7e7;
+  padding: 5px;
+  margin-bottom: 20px;
+  flex-direction: row;
+  display: flex;
+}
+.topnav > .nav-items {
+  margin: auto 15px;
+  margin-left: auto;
+  justify-content: flex-end;
+}
+.topnav > .nav-items {
+  vertical-align: middle;
+}
+.topnav-logo {
+  display: flex;
+  background-image: url("/imgs/logo.png");
+  width: 50px;
+  height: 50px;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
+  margin: auto 15px;
+}
+select {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+section {
+  /* grid-area: section; */
+  grid-row: 1/6;
+  grid-column: 2 / span 6;
+  /* background-color: #e7e7e7; */
+  padding: 25px 50px;
+}
+.g-container {
+  border-radius: 10px;
+  /* height: 100%; */
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px #e7e7e7;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 15pt;
+  font-weight: 500;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px;
+}
+.card {
+  background: #50c9c3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #96deda,
+    #50c9c3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #96deda,
+    #50c9c3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  box-shadow: 0 0 10px #b4b4b4;
+  margin: auto 20px;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+  text-decoration: none;
+  color: #303030;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card:hover {
+  background: #7474bf; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #348ac7,
+    #7474bf
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #348ac7,
+    #7474bf
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.card > .title {
+  font-size: 40pt;
+  color: #494949;
+}
+.card > .desc {
+  font-size: 30pt;
+}
+.btn {
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 20px 15px 20px;
+  font-size: 11pt;
+  text-decoration: none;
+  color: #303030;
+  transition-timing-function: ease-in-out;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.main-color {
+  background: #ec008c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #fc6767,
+    #ec008c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #fc6767,
+    #ec008c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: #303030;
+}
+
+.main-color:hover {
+  background: #da22ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #9733ee,
+    #da22ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #9733ee,
+    #da22ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  transition: 0.5s;
+  color: #fff;
+}
+.accent-color {
+  background: #834d9b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #d04ed6,
+    #834d9b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #d04ed6,
+    #834d9b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: #303030;
+}
+.accent-color:hover {
+  background: #fc00ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #00dbde,
+    #fc00ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #00dbde,
+    #fc00ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  transition: 0.5s;
+  color: #fff;
+}
+
+/* Full-width inputs */
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 500px) {
+  * {
+    font-size: 10px !important;
+  }
+  nav {
+    grid-row: 1/6;
+    grid-column: 1/3;
+  }
+  section {
+    /* grid-area: section; */
+    grid-row: 1/6;
+    grid-column: 3 / span 6;
+    /* background-color: #e7e7e7; */
+    padding: 5px;
+  }
+  .btn {
+    padding: 10px;
+  }
+  .g-container {
+    padding: 0px;
+    margin: 0;
+  }
+  .row {
+    padding: 5px;
+    margin: 0;
+  }
+  .card {
+    width: fit-content;
+    height: fit-content;
+    margin: 5px;
+    justify-content: center;
+  }
+  nav > ul > li > a > i {
+    margin-right: 5px;
+  }
+  .nav-avatar {
+    width: 50px;
+    height: 50px;
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="container fade">
+          <div class="navbar">
+        <a class="btn" href="dashboard.html">dash</a>
+        <p>Welcome to the E-library</p>
+      </div>
+      <div class="login-box">
+        <div class="imgcontainer"></div>
+        <form action="action_page.php" method="post">
+          <label for="login-email"><b>Email</b></label>
+          <input
+            type="text"
+            placeholder="Enter Email"
+            name="login-email"
+            required
+          />
+          <label for="login-psw"><b>Password</b></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="login-psw"
+            required
+          />
+          <button type="submit" class="btn main-color w100">Login</button>
+          <p class="text-center">Or</p>
+        </form>
+        <a href="register.html">
+          <button class="btn accent-color w100">Register</button>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
