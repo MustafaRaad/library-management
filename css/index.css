@@ -16,7 +16,7 @@ body {
 
 /* Center the avatar image inside this container */
 .imgcontainer {
-  background-image: url("/imgs/avatar.svg");
+  background-image: url("imgs/avatar.svg");
   background-attachment: scroll;
   background-position: center;
   background-size: cover;
