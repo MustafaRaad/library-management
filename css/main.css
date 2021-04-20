@@ -155,6 +155,12 @@ section {
   justify-content: space-around;
   margin: 20px;
 }
+.row-c {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+}
 .card {
   background: #50c9c3; /* fallback for old browsers */
   background: -webkit-linear-gradient(

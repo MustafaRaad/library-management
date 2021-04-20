@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/list.css" />
+    <link rel="stylesheet" href="css/claims.css" />
+    <link rel="stylesheet" href="css/articles.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -48,9 +49,7 @@
             >
           </li>
           <li>
-            <a href="calims.html"
-              ><i class="fas fa-address-card"></i>Claims</a
-            >
+            <a href="claims.html"><i class="fas fa-address-card"></i>Claims</a>
           </li>
         </ul>
       </nav>
@@ -70,84 +69,75 @@
             </form>
           </div>
         </div>
+        <!-- -------------------------------------------------------------------------------------------------------------------- -->
 
-        <!-- --------------------------- -->
         <div class="g-container fade">
-
           <input
             type="text"
             id="myInput"
             onkeyup="myFunction()"
-            placeholder="Search for article.."
-            title="Type in a name"
+            placeholder="Search for Article.."
+            title="Type in a Article"
           />
 
-          <table id="myTable">
-            <tr>
-              <td rowspan="3" class="list-img"></td>
-              <td colspan="3">Title</td>
-            </tr>
-            <tr>
-              <td>
-                Alfreds FutterkisteAlfreds FutterkisteAlfreds FutterkisteAlfreds
-                FutterkisteAlfreds FutterkisteAlfreds FutterkisteAlfreds
-                FutterkisteAlfreds Futterkiste
-              </td>
-              <td class="action">
-                <a href="articles-detail.html" class="l"> Read more.. </a>
-              </td>
-            </tr>
-          </table>
-          <table id="myTable">
-            <tr>
-              <td rowspan="3" class="list-img"></td>
-              <td colspan="3">Article</td>
-            </tr>
-            <tr>
-              <td>
-                Alfreds FutterkisteAlfreds FutterkisteAlfreds FutterkisteAlfreds
-                FutterkisteAlfreds FutterkisteAlfreds FutterkisteAlfreds
-                FutterkisteAlfreds Futterkiste
-              </td>
-              <td class="action">
-                <a href="articles-detail.html" class="l"> Read more.. </a>
-              </td>
-            </tr>
-          </table>
-                    <table id="myTable">
-            <tr>
-              <td rowspan="3" class="list-img"></td>
-              <td colspan="3">Article</td>
-            </tr>
-            <tr>
-              <td>
-                Alfreds FutterkisteAlfreds FutterkisteAlfreds FutterkisteAlfreds
-                FutterkisteAlfreds FutterkisteAlfreds FutterkisteAlfreds
-                FutterkisteAlfreds Futterkiste
-              </td>
-              <td class="action">
-                <a href="articles-detail.html" class="l"> Read more.. </a>
-              </td>
-            </tr>
-          </table>
-                    <table id="myTable">
-            <tr>
-              <td rowspan="3" class="list-img"></td>
-              <td colspan="3">Article</td>
-            </tr>
-            <tr>
-              <td>
-                Alfreds FutterkisteAlfreds FutterkisteAlfreds FutterkisteAlfreds
-                FutterkisteAlfreds FutterkisteAlfreds FutterkisteAlfreds
-                FutterkisteAlfreds Futterkiste
-              </td>
-              <td class="action">
-                <a href="" class="l"> Read more.. </a>
-              </td>
-            </tr>
-          </table>
+          <ul id="myUL">
+            <!-- -----------------------------li--------------------------------- -->
+
+            <li>
+              <div class="row">
+                <div class="row">
+                  <div class="col w-25">
+                    <div class="list-img"></div>
+                  </div>
+                  <div class="col w-75">
+                    <div class="row">
+                      <p>Ofy</p>
+                    </div>
+                    <div class="row">
+                      <div class="col w-100">
+                        <span>
+                          Alfreds FutterkisteAlfreds FutterkisteAlfreds
+                          FutterkisteAlfreds FutterkisteAlfreds
+                          FutterkisteAlfreds FutterkisteAlfreds
+                          FutterkisteAlfreds Futterkiste
+                        </span>
+                      </div>
+                      <div class="col w-25">
+                        <a href="articles-detail.html"> Read more </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- -----------------------------li2--------------------------------- -->
+            <li>
+              <div class="row">
+                <div class="row">
+                  <div class="col w-25">
+                    <div class="list-img"></div>
+                  </div>
+                  <div class="col w-75">
+                    <div class="row">
+                      <p>Mustafa</p>
+                    </div>
+                    <div class="row">
+                      <div class="col w-100">
+                        <span>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit architecto alias ad eius adipisci. Enim placeat, eaque adipisci accusamus suscipit dicta eius, sint est temporibus nesciunt aliquam recusandae nemo ratione?
+                        </span>
+                      </div>
+                      <div class="col w-25">
+                        <a href="articles-detail.html"> Read more </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
-        <!-- --------------------------------- -->
+        <!-- -------------------------------------------------------------------------------------------------------------------- -->
       </section>
     </main>
     <script src="js/list.js"></script>

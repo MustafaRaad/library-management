@@ -1,0 +1,79 @@
+#myInput {
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#myUL > li {
+  padding: 25;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin: 10px auto;
+  box-shadow: 0 0 5px #e7e7e7;
+}
+#myUL li p {
+  display: inline;
+}
+#myUL li span {
+  font-weight: 400;
+}
+
+.list-img {
+  background-image: url("../imgs/1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+li a {
+  font-size: 10pt;
+  font-weight: 300;
+  color: #d66b56;
+}
+.action > .l {
+  color: #d66b56;
+}
+.action > .r {
+  color: #d66b56;
+}
+.row {
+  justify-content: start !important;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+}
+.col {
+  width: 50%;
+  text-align: left;
+  padding: 5px;
+}
+.w-10 {
+  width: 10%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-15 {
+  width: 15%;
+}
+.w-25 {
+  width: 25%;
+}
+.w-60 {
+  width: 60%;
+}
+.w-75 {
+  width: 75%;
+}
+.w-100 {
+  width: 100%;
+}

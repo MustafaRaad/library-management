@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/list.css" />
+    <link rel="stylesheet" href="css/claims.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -48,9 +48,7 @@
             >
           </li>
           <li>
-            <a href="calims.html"
-              ><i class="fas fa-address-card"></i>Claims</a
-            >
+            <a href="claims.html"><i class="fas fa-address-card"></i>Claims</a>
           </li>
         </ul>
       </nav>
@@ -77,78 +75,62 @@
             type="text"
             id="myInput"
             onkeyup="myFunction()"
-            placeholder="Search for article.."
+            placeholder="Search for names.."
             title="Type in a name"
           />
 
-          <table id="myTable">
-            <tr>
-              <td rowspan="3" class="list-img"></td>
-              <td colspan="3">Title</td>
-            </tr>
-            <tr>
-              <td>
-                Alfreds FutterkisteAlfreds FutterkisteAlfreds FutterkisteAlfreds
-                FutterkisteAlfreds FutterkisteAlfreds FutterkisteAlfreds
-                FutterkisteAlfreds Futterkiste
-              </td>
-              <td class="action">
-                <a href="articles-detail.html" class="l"> Read more.. </a>
-              </td>
-            </tr>
-          </table>
-          <table id="myTable">
-            <tr>
-              <td rowspan="3" class="list-img"></td>
-              <td colspan="3">Article</td>
-            </tr>
-            <tr>
-              <td>
-                Alfreds FutterkisteAlfreds FutterkisteAlfreds FutterkisteAlfreds
-                FutterkisteAlfreds FutterkisteAlfreds FutterkisteAlfreds
-                FutterkisteAlfreds Futterkiste
-              </td>
-              <td class="action">
-                <a href="articles-detail.html" class="l"> Read more.. </a>
-              </td>
-            </tr>
-          </table>
-          <table id="myTable">
-            <tr>
-              <td rowspan="3" class="list-img"></td>
-              <td colspan="3">Article</td>
-            </tr>
-            <tr>
-              <td>
-                Alfreds FutterkisteAlfreds FutterkisteAlfreds FutterkisteAlfreds
-                FutterkisteAlfreds FutterkisteAlfreds FutterkisteAlfreds
-                FutterkisteAlfreds Futterkiste
-              </td>
-              <td class="action">
-                <a href="articles-detail.html" class="l"> Read more.. </a>
-              </td>
-            </tr>
-          </table>
-          <table id="myTable">
-            <tr>
-              <td rowspan="3" class="list-img"></td>
-              <td colspan="3">Article</td>
-            </tr>
-            <tr>
-              <td>
-                Alfreds FutterkisteAlfreds FutterkisteAlfreds FutterkisteAlfreds
-                FutterkisteAlfreds FutterkisteAlfreds FutterkisteAlfreds
-                FutterkisteAlfreds Futterkiste
-              </td>
-              <td class="action">
-                <a href="" class="l"> Read more.. </a>
-              </td>
-            </tr>
-          </table>
+          <ul id="myUL">
+            <li>
+              <div class="row">
+                <div class="col">
+                  <label> Name: </label>
+                  <p>Ofy</p>
+                </div>
+                <div class="col">
+                  <label> Country: </label>
+                  <p>Iraq</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <label for=""> E-mail: </label>
+                  <span>mustafa.raad@tm.iq</span>
+                </div>
+                <div class="col">
+                  <label for=""> Contact: </label>
+                  <span>Ofy</span>
+                </div>
+              </div>
+            </li>
+            <!-- -----------------------------li2--------------------------------- -->
+            <li>
+              <div class="row">
+                <div class="col">
+                  <label> Name: </label>
+                  <p>Mustafa</p>
+                </div>
+                <div class="col">
+                  <label> Country: </label>
+                  <p>USA</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <label for=""> E-mail: </label>
+                  <span>ofy@tm.iq</span>
+                </div>
+                <div class="col">
+                  <label for=""> Contact: </label>
+                  <span>raad</span>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
         <!-- --------------------------------- -->
       </section>
     </main>
+
     <script src="js/list.js"></script>
   </body>
 </html>
